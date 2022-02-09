@@ -21,7 +21,7 @@ main {
 	font-family: $vista-sans;
 	font-size:var(--text-base-size);
 	margin-bottom: 2rem;
-    line-height:1.5rem
+    line-height:150%;
 }
   
   .grid-container {
@@ -87,15 +87,20 @@ main {
     .typescale-base {
     
     font-size: var(--text-base-size);
+    line-height:150%;
     
     }
 
     .typescale-small {
       font-size: var(--text-size-small);
+      line-height:150%;
+
       }
 
       .typescale-xsmall {
         font-size: var(--text-size-xsmall);
+        line-height:150%;
+
         }
 
     h1, h2, h3, h4, h5, h6 {
