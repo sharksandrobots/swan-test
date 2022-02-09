@@ -1,0 +1,27 @@
+        
+
+
+
+$vista-sans: 'Graphik Regular', Arial, sans-serif;
+$vista-sans-medium: 'Graphik Medium', Arial, sans-serif;
+$vista-sans-bold: 'Graphik Bold', Arial, sans-serif;
+
+
+// Graphik
+
+.vista-sans {
+		font-family:$vista-sans;
+		font-weight: $normal;
+}
+
+.vista-sans-medium {
+		font-family:$vista-sans-medium;
+		font-weight: $medium;
+}
+
+.vista-sans-bold {
+		font-family:$vista-sans-bold;
+		font-weight: $bold;
+}
+
+

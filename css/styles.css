@@ -1,0 +1,428 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea {
+  margin: 0;
+  border: none;
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* show a hand cursor on hover; some argue that we
+  should keep the default arrow cursor for buttons */
+  cursor: pointer;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.ap-id-red {
+  background-color: #EF3340;
+}
+
+.ap-gray-cool-deep {
+  background-color: #2c2c2c;
+}
+
+.ap-gray-cool-rich {
+  background-color: #787878;
+}
+
+.ap-gray-cool-medium {
+  background-color: #b5b5b6;
+}
+
+.ap-gray-cool-bright {
+  background-color: #ececec;
+}
+
+.ap-gray-warm-deep {
+  background-color: #424242;
+}
+
+.ap-gray-warm-rich {
+  background-color: #878781;
+}
+
+.ap-gray-warm-medium {
+  background-color: #c3c3b9;
+}
+
+.ap-gray-warm-bright {
+  background-color: #ece8df;
+}
+
+.ap-cerulean-deep {
+  background-color: #06153f;
+}
+
+.ap-cerulean-rich {
+  background-color: #0a3175;
+}
+
+.ap-cerulean-medium {
+  background-color: #104ba5;
+}
+
+.ap-cerulean-bright {
+  background-color: #448bff;
+}
+
+.ap-blue-deep {
+  background-color: #06263f;
+}
+
+.ap-blue-rich {
+  background-color: #0b5475;
+}
+
+.ap-blue-medium {
+  background-color: #117da5;
+}
+
+.ap-blue-bright {
+  background-color: #1ca7da;
+}
+
+.ap-turquoise-deep {
+  background-color: #0d393d;
+}
+
+.ap-turquoise-rich {
+  background-color: #0b7579;
+}
+
+.ap-turquoise-medium {
+  background-color: #00a3a8;
+}
+
+.ap-turquoise-bright {
+  background-color: #00c7ae;
+}
+
+.ap-green-deep {
+  background-color: #233500;
+}
+
+.ap-green-rich {
+  background-color: #507200;
+}
+
+.ap-green-medium {
+  background-color: #78a600;
+}
+
+.ap-green-bright {
+  background-color: #b1c70a;
+}
+
+.ap-brown-deep {
+  background-color: #38261e;
+}
+
+.ap-yellow-rich {
+  background-color: #95702f;
+}
+
+.ap-yellow-medium {
+  background-color: #d8a538;
+}
+
+.ap-yellow-bright {
+  background-color: #f1be00;
+}
+
+.ap-orange-deep {
+  background-color: #3d2600;
+}
+
+.ap-orange-rich {
+  background-color: #7b490c;
+}
+
+.ap-orange-medium {
+  background-color: #b1671e;
+}
+
+.ap-orange-bright {
+  background-color: #df8600;
+}
+
+.ap-magenta-deep {
+  background-color: #3d0528;
+}
+
+.ap-magenta-rich {
+  background-color: #771251;
+}
+
+.ap-magenta-medium {
+  background-color: #a91e75;
+}
+
+.ap-magenta-bright {
+  background-color: #df2c9d;
+}
+
+.ap-purple-deep {
+  background-color: #3e0c41;
+}
+
+.ap-purple-rich {
+  background-color: #660775;
+}
+
+.ap-purple-medium {
+  background-color: #993399;
+}
+
+.ap-purple-bright {
+  background-color: #b82dc1;
+}
+
+:root {
+  /* body font size */
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.25;
+  --text-size-small: .875rem;
+  --text-size-xsmall: .75rem;
+  /* type scale */
+  --text-x1: calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-x2: calc(var(--text-x1) * var(--text-scale-ratio));
+  --text-x3: calc(var(--text-x2) * var(--text-scale-ratio));
+  --text-x4: calc(var(--text-x3) * var(--text-scale-ratio));
+  --text-x5: calc(var(--text-x4) * var(--text-scale-ratio));
+  --text-x6: calc(var(--text-x5) * var(--text-scale-ratio));
+}
+
+@media (min-width: 30em) {
+  :root {
+    --text-base-size: 1.125rem;
+    --text-scale-ratio: 1.333;
+    --text-size-small: 1rem;
+    --text-size-xsmall: .813rem;
+    /* type scale */
+    --text-x1: calc(var(--text-base-size) * var(--text-scale-ratio));
+    --text-x2: calc(var(--text-x1) * var(--text-scale-ratio));
+    --text-x3: calc(var(--text-x2) * var(--text-scale-ratio));
+    --text-x4: calc(var(--text-x3) * var(--text-scale-ratio));
+    --text-x5: calc(var(--text-x4) * var(--text-scale-ratio));
+    --text-x6: calc(var(--text-x5) * var(--text-scale-ratio));
+  }
+}
+
+@font-face {
+  font-family: "Graphik Bold";
+  src: url("/fonts/Graphik-Bold-Web.woff2") format("woff2"), url("/fonts/Graphik-Bold-Web.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik Medium";
+  src: url("/fonts/Graphik-Medium-Web.woff2") format("woff2"), url("/fonts/Graphik-Medium-Web.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik Regular";
+  src: url("/fonts/Graphik-Regular-Web.woff2") format("woff2"), url("/fonts/Graphik-Regular-Web.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.vista-sans {
+  font-family: "Graphik Regular", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.vista-sans-medium {
+  font-family: "Graphik Medium", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.vista-sans-bold {
+  font-family: "Graphik Bold", Arial, sans-serif;
+  font-weight: 900;
+}
+
+body {
+  background-color: #fafafa;
+  color: #222;
+  padding-top: 2rem;
+  font-family: "Graphik Regular", Arial, sans-serif;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Graphik Regular", Arial, sans-serif;
+  font-size: var(--text-base-size);
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  grid-gap: 2rem;
+}
+
+@media (min-width: 30em) {
+  .grid-container {
+    -ms-grid-columns: 2fr 8fr;
+        grid-template-columns: 2fr 8fr;
+  }
+}
+
+section {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+article {
+  border-bottom: 1px solid #ffc400;
+  margin-bottom: 5rem;
+}
+
+.typescale-base-x6 {
+  font-size: var(--text-x6);
+}
+
+.typescale-base-x5 {
+  font-size: var(--text-x5);
+}
+
+.typescale-base-x4 {
+  font-size: var(--text-x4);
+}
+
+.typescale-base-x3 {
+  font-size: var(--text-x3);
+}
+
+.typescale-base-x2 {
+  font-size: var(--text-x2);
+}
+
+.typescale-base-x1 {
+  font-size: var(--text-x1);
+}
+
+.typescale-base {
+  font-size: var(--text-base-size);
+}
+
+.typescale-small {
+  font-size: var(--text-size-small);
+}
+
+.typescale-xsmall {
+  font-size: var(--text-size-xsmall);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--text-x6);
+  line-height: 110%;
+  font-family: "Graphik Medium", Arial, sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--text-x5);
+  font-family: "Graphik Medium", Arial, sans-serif;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--text-x4);
+  font-family: "Graphik Medium", Arial, sans-serif;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--text-x3);
+  font-family: "Graphik Medium", Arial, sans-serif;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: var(--text-x2);
+  font-family: "Graphik Medium", Arial, sans-serif;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: var(--text-x1);
+  font-family: "Graphik Medium", Arial, sans-serif;
+  line-height: 120%;
+  font-weight: 700;
+}

@@ -1,0 +1,177 @@
+// imports
+@import "reset";
+@import "colors";
+@import "variables";
+@import "fonts";
+@import "typography";
+
+body {
+	background-color: #fafafa;
+	color: #222;
+    padding-top: 2rem;
+    font-family:$vista-sans;
+}
+
+main {
+    width:80vw;
+    margin: 0 auto;
+  }
+
+  p {
+	font-family: $vista-sans;
+	font-size:var(--text-base-size);
+	margin-bottom: 2rem;
+    line-height:1.5rem
+}
+  
+  .grid-container {
+    display:grid;
+    grid-template-columns: 1fr;
+    @media(min-width: 30em) {
+    grid-template-columns: 2fr 8fr;
+    }
+    grid-auto-rows:min-content;
+    grid-gap:2rem;
+  }
+
+  section {
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+  }
+
+  article {
+    border-bottom: 1px solid #ffc400;
+    margin-bottom: 5rem;
+}
+
+  // Typography
+
+
+    
+    .typescale-base-x6 {
+    
+    font-size: var(--text-x6);
+    
+    }
+    
+    .typescale-base-x5 {
+    
+    font-size: var(--text-x5);
+    
+    }
+    
+    .typescale-base-x4 {
+    
+    font-size: var(--text-x4);
+    
+    }
+    
+    .typescale-base-x3 {
+    
+    font-size: var(--text-x3);
+    
+    }
+    
+    .typescale-base-x2 {
+    
+    font-size: var(--text-x2);
+    
+    }
+    
+    .typescale-base-x1 {
+    
+    font-size: var(--text-x1);
+    
+    }
+    
+    .typescale-base {
+    
+    font-size: var(--text-base-size);
+    
+    }
+
+    .typescale-small {
+      font-size: var(--text-size-small);
+      }
+
+      .typescale-xsmall {
+        font-size: var(--text-size-xsmall);
+        }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom:1rem;
+    }
+
+    h1 {
+    
+    font-size: var(--text-x6);
+    
+    line-height: 110%;
+    
+    font-family:$vista-sans-medium;
+    
+    font-weight: $medium;
+    
+    }
+    
+    h2 {
+    
+    font-size: var(--text-x5);
+    
+    font-family:$vista-sans-medium;
+    
+    line-height: 110%;
+    
+    font-weight: $medium;
+    
+    }
+    
+    h3 {
+    
+    font-size: var(--text-x4);
+    
+    font-family:$vista-sans-medium;
+    
+    line-height: 120%;
+    
+    font-weight: $medium;
+    
+    }
+    
+    h4 {
+    
+    font-size: var(--text-x3);
+    
+    font-family:$vista-sans-medium;
+    
+    line-height: 120%;
+    
+    font-weight: $medium;
+    
+    }
+    
+    h5 {
+    
+    font-size: var(--text-x2);
+    
+    font-family:$vista-sans-medium;
+    
+    line-height: 120%;
+    
+    font-weight: $medium;
+    
+    }
+    
+    h6 {
+    
+    font-size: var(--text-x1);
+    
+    font-family:$vista-sans-medium;
+    
+    line-height: 120%;
+    
+    font-weight: $medium;
+    
+    }
+
+

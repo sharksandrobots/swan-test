@@ -1,0 +1,62 @@
+
+:root {
+  /* body font size */
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.25;
+  --text-size-small: .875rem;
+  --text-size-xsmall: .75rem;
+  /* type scale */
+  --text-x1: calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-x2: calc(var(--text-x1) * var(--text-scale-ratio));
+  --text-x3: calc(var(--text-x2) * var(--text-scale-ratio));
+  --text-x4: calc(var(--text-x3) * var(--text-scale-ratio));
+  --text-x5: calc(var(--text-x4) * var(--text-scale-ratio));
+  --text-x6: calc(var(--text-x5) * var(--text-scale-ratio));
+}
+
+  @media(min-width: 30em) {
+    :root {
+    --text-base-size: 1.125rem;
+    --text-scale-ratio: 1.333;
+    --text-size-small: 1rem;
+    --text-size-xsmall: .813rem;
+
+/* type scale */
+--text-x1: calc(var(--text-base-size) * var(--text-scale-ratio));
+--text-x2: calc(var(--text-x1) * var(--text-scale-ratio));
+--text-x3: calc(var(--text-x2) * var(--text-scale-ratio));
+--text-x4: calc(var(--text-x3) * var(--text-scale-ratio));
+--text-x5: calc(var(--text-x4) * var(--text-scale-ratio));
+--text-x6: calc(var(--text-x5) * var(--text-scale-ratio));
+  }
+}
+  
+
+// Font variables
+
+$normal:400;
+$medium:700;
+$bold:900;
+
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%bgcover {
+   background-size: cover;
+   background-repeat:no-repeat;
+   background-position: center;
+}
+
+
+
+
+
+
+
+
